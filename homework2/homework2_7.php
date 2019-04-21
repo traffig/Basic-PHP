@@ -11,7 +11,7 @@ function get_time($hours, $minutes)
 {
     if ($hours === 1 || $hours === 21) {
         $hours = "$hours час ";
-    } elseif ($hours === 2 || $hours === 3 || $hours == 4 || $hours === 22 || $hours === 23 || $hours == 24) {
+    } elseif ($hours === 2 || $hours === 3 || $hours === 4 || $hours === 22 || $hours === 23 || $hours === 24) {
         $hours = "$hours часа ";
     } else {
         $hours = "$hours часов ";
