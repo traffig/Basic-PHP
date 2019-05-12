@@ -21,7 +21,7 @@ require('mysql_all_img.php');
 <body>
 <div class="gallery">
     <?php foreach ($result as $img): ?>
-        <a href="mysql_rating.php?id=<?= $img['id'] ?>">
+        <a href="mysql_rating.php?id=<?= $img['id'] ?>" target="_blank">
             <img src="<?= $img['url_min'] ?>" id="<?= $img['id'] ?>" alt="<?= $img['name'] ?>"
                  title="<?= $img['name'] ?>">
         </a>
