@@ -21,19 +21,11 @@ require('mysql_all_img.php');
 <body>
 <div class="gallery">
     <?php foreach ($result as $img): ?>
-        <img src="<?= $img['url_min'] ?>" id="<?= $img['id'] ?>" alt="<?= $img['name'] ?>"
-             title="<?= $img['name'] ?>">
+        <a href="mysql_rating.php?id=<?= $img['id'] ?>">
+            <img src="<?= $img['url_min'] ?>" id="<?= $img['id'] ?>" alt="<?= $img['name'] ?>"
+                 title="<?= $img['name'] ?>">
+        </a>
     <?php endforeach; ?>
 </div>
-<script>
-    window.onload = () => {
-        document.querySelector('.gallery').addEventListener('click', event => {
-            if (event.target.tagName !== 'IMG') {
-                return;
-            }
-            location.href = 'mysql_rating.php?id=' + event.target.id;
-        });
-    };
-</script>
 </body>
 </html>
