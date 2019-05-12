@@ -1,0 +1,8 @@
+.gallery {
+    display: flex;
+}
+.gallery img {
+    width: 300px;
+    margin: 10px;
+    cursor: pointer;
+}
